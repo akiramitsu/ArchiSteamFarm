@@ -5,13 +5,16 @@
   "author": "Arkadiusz 'Mole' Sygulski <arkadiusz@sygulski.pl>",
   "private": true,
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "lodash": "^4.17.10",
     "vue": "^2.5.16",
     "vue-i18n": "^7.6.0",
-    "vue-router": "^2.8.1"
+    "vue-router": "^2.8.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
@@ -34,5 +37,6 @@
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 5.0.0"
-  }
+  },
+  "snyk": true
 }
